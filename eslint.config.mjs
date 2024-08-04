@@ -20,7 +20,7 @@ export default [
           fixToUnknown: true,
         },
       ],
-      'no-console': 'error',
+      // 'no-console': 'error',
     },
   },
   { files: ['**/*.{js,mjs,cjs,ts}'] },

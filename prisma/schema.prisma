@@ -12,12 +12,11 @@ enum UserStatus {
   Deactivated
 }
 
-model User {
+model Users {
   id    String     @id @default(uuid())
   email String  @unique(map: "User_email_key")
-  name  String
-  password String @db.Text
+  firstname  String
+  lastname  String
   status UserStatus @default(Active)
   created_at DateTime @default(now())
-  updated_at DateTime @updatedAt
 }
